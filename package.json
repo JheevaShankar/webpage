@@ -1,0 +1,13 @@
+{
+  "name": "movielist",
+  "version": "1.0.0",
+  "description": "A web project",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "python -m http.server 8000 --directory public",
+    "dev": "python -m http.server 8000 --directory public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
