@@ -421,7 +421,7 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     color: #ffc107;
 }
 
@@ -429,15 +429,37 @@ body {
     font-size: 1.2rem;
 }
 
-.modal-year, .modal-genre {
-    color: #b0b0b0;
-    margin-bottom: 0.5rem;
+/* Movie Details Section */
+.modal-details {
+    background: rgba(102, 126, 234, 0.1);
+    border-left: 3px solid #667eea;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.modal-detail-item {
+    color: #e0e0e0;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.modal-detail-item strong {
+    color: #667eea;
+    display: inline-block;
+    min-width: 100px;
+}
+
+.modal-detail-item:last-child {
+    margin-bottom: 0;
 }
 
 .modal-description {
     color: #e0e0e0;
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    font-size: 0.95rem;
 }
 
 .modal-buttons {
