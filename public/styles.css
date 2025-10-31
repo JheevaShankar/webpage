@@ -286,6 +286,16 @@ body {
     font-size: 0.9rem;
 }
 
+.movie-cast-preview {
+    color: #a0a0ff;
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 /* Categories Section */
 .categories-section {
     background: rgba(0, 0, 0, 0.3);

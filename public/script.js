@@ -82,6 +82,7 @@ function renderMovies(moviesToRender) {
 function createMovieCard(movie) {
     const card = document.createElement('div');
     card.className = 'movie-card';
+    const castPreview = (movie.cast || []).slice(0, 2).join(', ');
     card.innerHTML = `
         <div class="movie-poster">🎬</div>
         <div class="movie-info">
@@ -91,6 +92,7 @@ function createMovieCard(movie) {
                 <span>${movie.rating}</span>
             </div>
             <div class="movie-year">${movie.year}</div>
+            <div class="movie-cast-preview">${castPreview || 'Cast info available'}</div>
         </div>
     `;
     
