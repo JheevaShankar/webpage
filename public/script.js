@@ -25,8 +25,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function initializeApp() {
     renderMovies(movies);
+    renderTopRatedMovies();
     setupEventListeners();
     loadWatchlist();
+}
+
+function renderTopRatedMovies() {
+    const topRatedGrid = document.getElementById('topRatedGrid');
+    if (!topRatedGrid) return;
+    
+    // Get top 6 movies by rating
+    const topRated = [...movies].sort((a, b) => b.rating - a.rating).slice(0, 6);
+    
+    topRatedGrid.innerHTML = '';
+    topRated.forEach(movie => {
+        const card = createMovieCard(movie);
+        topRatedGrid.appendChild(card);
+    });
 }
 
 function setupEventListeners() {
